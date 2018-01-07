@@ -20,7 +20,7 @@ to its end.
 
 ## Which dependencies?
 
-See shipped ``depends.txt``.
+None.
 
 ## How to use?
 
