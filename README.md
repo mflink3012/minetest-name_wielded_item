@@ -26,6 +26,8 @@ See shipped ``depends.txt``.
 
 1. Just look on the right-bottom-corner with an item in your hand to see its description/name.
 
+![Screenshot](screenshot.png "Screenshot") 
+
 ## Known issues?
 
 See the ``issues``-tab in GitHub-Repository.
