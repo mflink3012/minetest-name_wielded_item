@@ -1,0 +1,2 @@
+Shows the description or name of
+the wielded item on the HUD.
