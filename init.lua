@@ -14,7 +14,7 @@ function name_wielded_item.add(player)
         text      = "",
         alignment = 0,
         scale     = { x = 100, y = 30},
-        number    = 0x00FF00,
+        number    = 0xeF00eF,
     })
     local player_name = player:get_player_name()
 
