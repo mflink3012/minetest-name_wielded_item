@@ -28,6 +28,7 @@ function name_wielded_item.remove(player)
 
     if name_wielded_item.hud_to_player[player_name] ~= nil then
       player:hud_remove(name_wielded_item.hud_to_player[player_name].index_text)
+      name_wielded_item.hud_to_player[player_name] = nil
     end
 end
 
