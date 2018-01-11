@@ -28,7 +28,7 @@ None.
 
 On default settings, it is right above the hotbar:
 
-![Screenshot](screenshot.png)
+![Screenshot](https://user-images.githubusercontent.com/35023780/34847177-c684e592-f71a-11e7-9c5b-147d8f32d66e.png)
 
 You can override the configuration of this mod easily by adding ``settings.lua`` to the mod's folder. Just copy the settings you want to change from [settings.default.lua](settings.default.lua) to ``settings.lua``.
 
