@@ -28,7 +28,7 @@ None.
 
 On default settings, it is right above the hotbar:
 
-![Screenshot](Screenshot)
+![Screenshot](screenshot.png)
 
 You can override the configuration of this mod easily by adding ``settings.lua`` to the mod's folder. Just copy the settings you want to change from [settings.default.lua](settings.default.lua) to ``settings.lua``.
 
