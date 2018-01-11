@@ -10,7 +10,7 @@ Locate the mods-folder of your minetest(-server)-installation.
 
 Click the *clone or download*-button in GitHub-Repository and download the ZIP-file to the mods-folder by clicking *Download ZIP* or if you have git installed call the following in your mods-folder:
 	
-	git clone https://github.com/name_wielded_item.git
+	git clone https://github.com/mflink3012/name_wielded_item.git
 
 Now you can select this mod in you minetest-client for singleplayer (e.g. for testing). If you want to use it on your minetest-server you have to edit the world's corresponding ``world.mt`` (inside the specific world-folder) and add
 
@@ -24,9 +24,22 @@ None.
 
 ## How to use?
 
-1. Just look on the right-bottom-corner with an item in your hand to see its description/name.
+1. Just look on your hub and see the description of the currently wielded item.
 
-![Screenshot](screenshot.png "Screenshot") 
+On default settings, it is right above the hotbar:
+
+![Default](https://user-images.githubusercontent.com/35023780/34841616-22b86fda-f709-11e7-9bac-d15fbfb695bc.png)
+
+You can override the configuration of this mod easily by adding ``settings.lua`` to the mod's folder. Just copy the settings you want to change from [settings.default.lua](settings.default.lua) to ``settings.lua``.
+
+For example:
+
+	settings.style.color = 0x0c0c0c
+	settings.style.scale = { x = 200, y = 60 }
+
+Or use the presets defined in [settings.default.lua](settings.default.lua).
+
+See also the shipped ``settings.lua-example``.
 
 ## Known issues?
 

@@ -1,0 +1,3 @@
+-- choosing preset
+settings.style = style_presets.right_bottom_corner
+settings.style.color = 0xffbb99

@@ -1,20 +1,32 @@
-local modName = minetest.get_current_modname();
+local mod_name = minetest.get_current_modname()
+
+local default_settings_file = minetest.get_modpath(mod_name).."/settings.default.lua"
+dofile(default_settings_file)
+
+assert(settings ~= nil, "No settings defined!")
+assert(settings.update_time ~= nil, "No settings.update_time set!")
+assert(settings.style.position ~= nil, "No settings.style.position set!")
+assert(settings.style.offset ~= nil, "No settings.style.offset set!")
+assert(settings.style.alignment ~= nil, "No settings.style.alignment set!")
+assert(settings.style.scale ~= nil, "No settings.style.scale set!")
+assert(settings.style.color ~= nil, "No settings.style.color set!")
 
 local name_wielded_item = {
-  update_time = 0.25,
+  update_time = settings.update_time,
   dtime = 0,
-  hud_to_player = {}
+  hud_to_player = {},
+  style = settings.style,
 }
 
 function name_wielded_item.add(player)
     local index_text = player:hud_add({
         hud_elem_type = "text",
-        position  = {x = 0.5, y = 1.0},
-        offset    = {x = 100, y = -70},
+        position  = name_wielded_item.style.position,
+        offset    = name_wielded_item.style.offset,
         text      = "",
-        alignment = 0,
-        scale     = { x = 100, y = 30},
-        number    = 0xcfcfcf,
+        alignment = name_wielded_item.style.alignment,
+        scale     = name_wielded_item.style.scale,
+        number    = name_wielded_item.style.color,
     })
     local player_name = player:get_player_name()
 
@@ -77,5 +89,5 @@ minetest.register_on_leaveplayer(name_wielded_item.on_leaveplayer)
 minetest.register_globalstep(name_wielded_item.on_globalstep)
 
 if minetest.setting_get("log_mods") then
-  minetest.log("action", "[mod/" .. modName .. "] loaded.")
+  minetest.log("action", "[mod/" .. mod_name .. "] loaded.")
 end
