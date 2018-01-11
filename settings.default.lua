@@ -4,8 +4,8 @@ style_presets = {
   above_hotbar = {
       -- move 50% left, move 100% down
       position = { x = 0.5, y = 1.0 },
-      -- move 100px left, move 70px up
-      offset = { x = 100, y = -70 },
+      -- center on x, move 100px up
+      offset = { x = 0, y = -100 },
       -- center on x and y
       alignment = { x = 0, y = 0 },
       -- 100px width, 30px height
