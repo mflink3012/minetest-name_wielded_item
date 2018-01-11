@@ -1,3 +1,4 @@
 -- choosing preset
 settings.style = style_presets.right_bottom_corner
+-- overriding color
 settings.style.color = 0xffbb99
