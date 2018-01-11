@@ -9,11 +9,11 @@ local name_wielded_item = {
 function name_wielded_item.add(player)
     local index_text = player:hud_add({
         hud_elem_type = "text",
-        position  = {x = 1, y = 1},
-        offset    = {x = -618, y = -80},
+        position  = {x = 0.5, y = 1.0},
+        offset    = {x = 0, y = -120},
         text      = "",
         alignment = 0,
-        scale     = { x = 200, y = 200},
+        scale     = { x = 100, y = 30},
         number    = 0xcfcfcf,
     })
     local player_name = player:get_player_name()
